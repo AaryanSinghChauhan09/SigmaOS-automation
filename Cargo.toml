@@ -1,0 +1,17 @@
+[package]
+name = "sigmaos-automation"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Project"]
+description = "Automation and scripting framework"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/AaryanSinghChauhan09/SigmaOS-automation"
+readme = "README.md"
+keywords = ["automation", "script", "workflow"]
+categories = ["development-tools"]
+
+[dependencies]
+sigmaos-kernel = { version = "0.1", path = "../SigmaOS-kernel" }
+
+[profile.release]
+opt-level = 3
