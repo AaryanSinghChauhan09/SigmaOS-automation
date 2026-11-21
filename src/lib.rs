@@ -178,3 +178,6 @@ mod tests {
         assert_eq!(mgr.set_enabled("none", true), Err(AutomationError::NotFound("none".to_string())));
     }
 }
+
+/// Module extracted from the SigmaOS-system monolith.
+pub mod build_runner;
